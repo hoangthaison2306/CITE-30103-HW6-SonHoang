@@ -1,0 +1,36 @@
+Question 2 – Stages of C Program Translation and Execution
+
+A C program moves from source code to execution in five main stages:
+
+1. Preprocessing
+   - The preprocessor handles commands beginning with '#', such as #include and #define.
+   - It copies header files into the program and expands macros.
+   - Possible error: “fatal error: stdio.h: No such file or directory”
+     This happens if a header file cannot be found.
+
+2. Compilation
+   - The compiler translates the preprocessed C code into assembly code.
+   - It checks syntax, types, and usage of variables and functions.
+   - Possible error: “error: expected ';' before 'return'”
+     This happens when the code has a syntax mistake.
+
+3. Assembly
+   - The assembler converts assembly instructions into machine code.
+   - The output is an object file (.o or .obj).
+   - Possible error: “assembler error: invalid instruction”
+     This occurs if broken or corrupted assembly code is produced.
+
+4. Linking
+   - The linker combines object files and external libraries (such as stdio).
+   - It resolves function references like printf() or scanf().
+   - Possible error: “undefined reference to 'printf'”
+     This occurs when the standard library or other required object files are missing.
+
+5. Loading
+   - The loader loads the final executable into memory for execution.
+   - It prepares memory layout (stack, heap, code segment).
+   - Possible error: “Segmentation fault (core dumped)”
+     This happens if the program is loaded or executed incorrectly.
+
+Each of these stages must complete successfully for the program to run.
+
