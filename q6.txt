@@ -1,0 +1,19 @@
+Question 6 – Identifier Naming Errors
+
+1) int 1value = 10;
+   - Error: Identifiers cannot start with a digit.
+   - Fix: int value1 = 10;
+
+2) float avg-rate = 12.5;
+   - Error: '-' is not allowed in identifiers.
+   - Fix: float avg_rate = 12.5;
+
+3) char Class = 'A';
+   - Error: Avoid names resembling reserved keywords (e.g., “class” in C++).
+   - Fix: char classGrade = 'A';
+
+Corrected version:
+    int value1 = 10;
+    float avg_rate = 12.5;
+    char classGrade = 'A';
+
